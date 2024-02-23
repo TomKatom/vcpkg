@@ -1,0 +1,46 @@
+{
+  "name": "sleuthkit",
+  "version-semver": "4.12.1",
+  "port-version": 0,
+  "description": "The Sleuth Kit® (TSK) is a library and collection of command line digital forensics tools that allow you to investigate volume and file system data. The library can be incorporated into larger digital forensics tools and the command line tools can be directly used to find evidence.",
+  "homepage": "https://github.com/sleuthkit/sleuthkit",
+  "license": "MIT",
+
+  "dependencies": [
+    "zlib"
+  ],
+
+  "features": {
+    "aff": {
+      "description": "Enable AFF format support",
+      "dependencies": [
+        "libaff"
+      ]
+    },
+    "ewf": {
+        "description": "Enable EWF format support",
+        "dependencies": [
+            "libewf"
+        ]
+    },
+    "vhdi": {
+        "description": "Enable VHD format support",
+        "dependencies": [
+            "libvhdi"
+        ]
+    },
+    "vmdk": {
+        "description": "Enable VMDK format support",
+        "dependencies": [
+            "libvmdk"
+        ]
+    },
+    "lvm": {
+        "description": "Enable LVM format support",
+        "dependencies": [
+            "libvslvm",
+            "libbfio"
+        ]
+    }
+  }
+}
